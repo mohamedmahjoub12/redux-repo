@@ -1,0 +1,22 @@
+h1 {
+    text-align: center;
+
+}
+
+body {
+    background-color: rgb(245, 245, 151);
+}
+
+.me-auto {
+    padding-left: 820%;
+
+}
+
+.shark {
+    padding-right: 90%;
+    height: 75px;
+}
+.shark img {
+height: 80px;
+
+}
