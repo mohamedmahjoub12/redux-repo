@@ -17,7 +17,7 @@ const Edit = ({task}) => {
     }
   return (
     <>
-    <Button variant='primary' onClick={handleShow}>
+    <Button variant='info' onClick={handleShow}>
         EDIT
     </Button>
     <Modal show={show} onHide={handleClose}>
@@ -25,7 +25,8 @@ const Edit = ({task}) => {
             <Modal.Title>Change the Task</Modal.Title>
         </Modal.Header>
         <ModalBody>
-            <input value={newTask} onChange={(e)=> setNewTask(e.target.value)}/>
+            <input value={newTask} 
+            onChange={(e)=> setNewTask(e.target.value)}/>
         </ModalBody>
         <Modal.Footer>
             <Button variant='secondary' onClick={handleClose}>Close</Button>

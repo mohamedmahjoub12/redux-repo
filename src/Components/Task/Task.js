@@ -12,13 +12,13 @@ const Task = ({ task }) => {
       <span className={task.isDone ? "done" : null}>{task.text}</span>
       <Edit task={task} />
       <Button
-        variant="outline-primary"
+        variant="danger"
         onClick={() => dispatch(deleteTask(task.id))}
       >
         DELETE
       </Button>
       <Button
-        variant="outline-primary"
+        variant="warning"
         onClick={() => dispatch(doneTask(task.id))}
       >
         {task.isDone ? "UnDone" : "Done"}

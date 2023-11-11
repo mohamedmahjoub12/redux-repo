@@ -25,8 +25,9 @@ const AddTask = () => {
         placeholder="Enter Task Title..."
         onChange={(e) => setText(e.target.value)}
         value={text}
+        
       />
-      <Button variant="light" onClick={handleAdd}>
+      <Button className="adding" variant="success" onClick={handleAdd}>
         Add
       </Button>
     </Form>
